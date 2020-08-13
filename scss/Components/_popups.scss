@@ -1,0 +1,20 @@
+.modal{
+    .modal-dialog{
+        max-width: 70%;
+        .modal-content{
+            background-color: transparent;
+                border: none;
+            
+            .modal-body{
+                padding: 0;
+                .close{
+                    span{
+                        color: $color-white;
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}

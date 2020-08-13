@@ -1,0 +1,31 @@
+.fiverr-update-feature{
+    padding: 70px 0;
+    .feature-text{
+        padding-right: $pd-5;
+    h3{
+        @include styleText($fs-2 + 6,$color-black-0,$fw-bold);
+        padding-bottom: $pd-2;
+    }
+    h4{
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        i{
+            @include styleText(10px,$color-green-2,null);
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            border:2px solid $color-green-2;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        @include styleText($fs-0 + 2,$color-black-0,$fw-bold)
+    }
+    p{
+        @include styleText($fs-0 - 1 ,$color-gray-1,$fw-normal);
+        word-spacing: 1px;
+    }
+    }
+}

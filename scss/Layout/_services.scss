@@ -1,0 +1,23 @@
+.fiverr-services{
+    padding: 100px 0;
+    // h2{
+    //     @include styleText($fs-2 + 4,$color-black-0,$fw-bold)
+    // }
+    .caroseul-services{
+        .services-item{
+            position: relative;
+            .caroseul-caption{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                h4{
+                    
+                    @include styleText($fs-2 + 2,$color-white,$fw-bold);
+                    small{
+                        @include styleText($fs-2 - 5,$color-white,$fw-normal);
+                    }
+                }
+            }
+        }
+    }
+}

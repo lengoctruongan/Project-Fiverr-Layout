@@ -1,0 +1,110 @@
+.fiverr-banner{
+    height: 600px;
+    padding-top: 100px;
+    background-color: $color-white-scream;
+    position: relative;
+    .banner-left{
+        padding-left:150px;
+        h1{
+            @include styleText($fs-4 - 6,$color-black-0,$fw-bold);
+            margin-bottom: $m-2;
+        }
+        @include headerForm(44px,$pd-0,$pd-3,90%,12px,16px);
+        .popular{
+            margin-top: 15px;
+            
+            span{
+                @include styleText($fs-0 - 3,$color-gray-6,$fw-bold);
+                margin-right: $m-1;
+            }
+            a{
+                margin-right: $m-1;
+                @include styleText($fs-0 - 3,$color-gray-3,$fw-normal);
+                @include styleTag_a(1px,5px,2px,$color-gray-0);
+                text-decoration: none;
+                transition: all 0.5s;
+                &:hover{
+                    @include hoverTag_a($color-gray-0,$color-gray-5)
+
+                    
+                }
+
+            }
+        }
+
+    }
+    .banner-right{
+        .fade-slider{
+            position:absolute;
+            top: 8%;
+            left:10%;
+            z-index: 2;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            animation: slider 15s linear infinite ;
+            img{
+                object-fit: cover;
+            }
+           .slider-caption{
+                position: absolute;
+                bottom: 0;
+                left: 40%;
+                i{
+                    @include styleText(12px,$color-yellow,null);
+                }
+                p{
+                    @include styleText(12px,$color-white,$fw-normal)
+                }
+            }
+            
+            }
+        .fade-slider:nth-child(1){
+            animation-delay: 0s;
+        }
+        .fade-slider:nth-child(2){
+            animation-delay: 3s;
+        }
+        .fade-slider:nth-child(3){
+            animation-delay: 6s;
+        }
+        .fade-slider:nth-child(4){
+            animation-delay: 9s;
+        }
+        .fade-slider:nth-child(5){
+            animation-delay: 12s;
+        }
+        
+    }
+    .triangle-background{
+        position: absolute;
+        // z-index: 1;
+        display: block;
+        bottom: 0;
+        right: 0;
+        border-bottom: 30vw solid $color-green-3;
+        border-left: 80vw solid transparent;
+
+    }
+
+
+}
+@keyframes slider{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    2%{
+        visibility: visible;
+        opacity: 1;
+    }
+    18%{
+        visibility: visible;
+        opacity: 0.9;
+    }
+    20%,100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+}

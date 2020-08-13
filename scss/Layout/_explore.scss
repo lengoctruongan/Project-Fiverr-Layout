@@ -1,0 +1,35 @@
+.fiverr-explore-service{
+    
+    .container-fiverr{
+        background-image: url(../../images/pro_banner_1400px-2x.png);
+        padding: $pd-5 0;
+    
+        .fiverr-explore-content{
+            width: 50%;
+            padding: 0 60px;
+            .try-fiverr-pro{
+                @include styleText($fs-0 - 1, $color-white, $fw-bold);
+                display: flex;
+                align-items: center;
+                img{
+                    width: 90px;
+                    height: 16px;
+                }
+             }
+            }
+        h3{
+            @include styleText($fs-3 - 2,$color-white,$fw-normal);
+            padding: $pd-2 0;
+        }
+        .explore{
+            @include styleText($fs-0,$color-green-1,$fw-normal);
+            text-decoration: none;
+            @include styleTag_a(10px,24px,4px,$color-green-1);
+            background-color: transparent;
+            transition: all 0.5s;
+            &:hover{
+                @include hoverTag_a($color-green-1,$color-white);
+            }
+        }
+    }
+}

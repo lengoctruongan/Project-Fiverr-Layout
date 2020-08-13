@@ -1,0 +1,12 @@
+.fiverr-websites{
+    box-shadow: 1px 3px 2px 3px $color-gray-0;
+    
+    .list-website{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+    }
+}

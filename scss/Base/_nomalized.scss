@@ -1,0 +1,48 @@
+.owl-carousel{
+    .owl-nav{
+        // &:hover{
+        //     background-color:transparent !important;
+        // }
+        .owl-prev, .owl-next{
+            position: absolute;
+            top:35%;
+            span{
+                @include styleText(40px,$color-gray-2,null);
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 35px;
+                background-color: $color-white;
+                box-shadow: 0 2px 5px 0 $color-gray-0;
+            }
+        }
+        .owl-prev{
+            left: -2%;
+        }
+        .owl-next{
+            right: -2%;
+        }
+    }
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+    background-color: transparent;
+}
+
+// modal
+.modal{
+    .modal-dialog{
+       
+        .modal-content{
+            width: 80%;
+            margin: 0 auto;
+            .modal-body{
+                .fiverr-video{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+    
+

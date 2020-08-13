@@ -1,0 +1,26 @@
+.fiverr-project-by-freelancer{
+    h2{
+        margin-bottom: $m-2;
+    }
+    .caroseul-project-layout{
+        .project-card{
+            img{
+                height: 237px;
+            }
+            .project-card-caption{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 36px;
+                    height: 38px;
+                    border-radius: 50%;
+                    margin-right: $m-1;
+                }
+                p{
+                    margin: 0;
+                    @include styleText($fs-0 - 2,$color-black-0,$fw-normal);
+                }
+            }
+        }
+    }
+}

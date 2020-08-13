@@ -1,0 +1,28 @@
+.fiveer-catagory-menu{
+    position: fixed;
+    width: 100%;
+    top: 21%;
+    background-color:$color-white;
+    visibility: hidden;
+    // transform: translate(-50%);
+    z-index: 10;
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 0;
+        padding: $pd-0 0;
+        li{
+            a{
+                @include styleText($fs-0,$color-gray-1,$fw-normal);
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+#catagory-animate.catagory-animate{
+    border-top:1px solid $color-gray-2;
+    border-bottom:1px solid $color-gray-2;
+}

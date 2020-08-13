@@ -1,0 +1,19 @@
+@font-face {
+    font-family:myFirstFont;
+  src: url(../Font/HelveticaWorld-Regular.ttf);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:myFirstFont;
+    .container-fiverr{
+        width: 88%;
+        margin: 0 auto;
+        
+    }
+    
+}

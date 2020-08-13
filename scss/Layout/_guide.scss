@@ -1,0 +1,20 @@
+.fiverr-guides{
+    .guide-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+           
+        }
+    }
+    .guide-item{
+        h3{
+            @include styleText($fs-0 + 2,$color-black-0,$fw-bold);
+            margin-top: $m-2;
+        }
+        p{
+            @include styleText($fs-0 - 1,$color-gray-4,$fw-normal);
+        }
+    }
+}

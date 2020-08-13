@@ -1,0 +1,32 @@
+.fiverr-find-fleelance{
+    
+    margin: 70px 0;
+    .container-fiverr{
+        background-image: url(../images/1440-cta2x.jpg);
+        padding-top:$pd-5;
+        padding-bottom: $pd-4;
+            .fleelance-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                @include styleText($fs-2 + 4,$color-black-0,$fw-normal);
+    
+            }
+            p{
+                @include styleText($fs-0,$color-gray-5,$fw-normal);
+            }
+            a{
+                @include styleTag_a(10px,24px,4px,$color-green);
+                @include styleText($fs-0,$color-white,$fw-bold);
+                text-decoration: none;
+                background-color: $color-green;
+                &:hover{
+                    @include hoverTag_a($color-green-4,$color-white);
+                }
+            }
+        }
+    }
+    
+}
